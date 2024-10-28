@@ -1,120 +1,340 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "JetBrains Mono", monospace;
-  font-optical-sizing: auto;
-  text-decoration: none;
-  margin-top: 3px;
-}
-main{
-    margin-top: 8%;
-}
-body{
-    background-color: beige;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    box-sizing: border-box;
 }
 
-Nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+body {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+    font-family: "JetBrains Mono", serif;
+    background-color: #292828;
 }
-.Nav-bar{
-  background-color: gainsboro;;
-}
-header{
+
+.navbar {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #292828;
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.cta-button button {
+    padding: 10px 20px;
+    background-color: #ebb105;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.cta-button button:hover {
+    background-color: #a57c00;
 }
 hr{
-    margin-top: 10%;
-}
-div hr{
-    margin-top: 5%;
 }
 
-nav ul li{
-    margin-right: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    
+/* Banner CSS */
+.Banner {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    gap: 20px; 
 }
 
-#Home-Banner{
-display: flex;
-justify-content: center;
+.Textos {
+    max-width: 50%; 
+    color: white;
 }
-#TituloHome{
-    margin-top: 6%;
-    text-align: center;
-    display: flex;
-    align-items: center;
+.Textos button{
+    margin-top: 1rem;
+    padding: 8px 30px 8px 30px;
+    background-color: #ebb105;
+    border: 0px;
+    font-family: "JetBrains Mono", serif;
+    cursor: pointer;
 }
-#TituloConteudo{
-    margin-top: 8%;
-    margin-bottom: 5%
+.Conteudo_jogo:hover{
+background-color: #a57c00;
+
 }
-.img-Container p{
-    max-width: 75%;
-    display: flex;
+.Imagem img {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 300px; 
+    margin-right: 20px;
 }
-.Home-Lua{
-    display: flex;
-    justify-content: end;
-}
-#img-Lua{
-    max-width: 40%;
-}
-.Titulo-Home{
-    font-size: 40px;
+.Foton{
+    font-size: 80px;
+    color: #ffffff;
     font-weight: 900;
 }
-.hr-banner{
-margin-top: 10%;
+.Textos span{
+    font-size: 70px;
+    background-color: #ffbf00;
+    color: #000000;
 }
-#Novidades{
+/* Container principal */
+.conteudo-vale-esperanca {
+  margin-bottom: 5rem;
+    margin-top: 5%;
     display: flex;
-    align-items: flex-start;
-}
-.img-Container{
-    flex: 1;
-    border-radius: 10px;
+    align-items: center; 
+    justify-content: space-between; 
+  }
+  
+  
+  .imagem-projeto img {
+    max-width: 30rem;
+    height: auto;
+    border-radius: 2px;
+    border: solid #606060;
+   
+  }
+
+  .btn-resumo {
+    margin-top: 15px;
+    padding: 7px 30px;
+    background-color: #ebb105;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "JetBrains Mono", serif;
+  }
+  
+  .btn-resumo:hover {
+    background-color: #d49503; 
+  }
+  .titulos-textos{
+    max-width: 50%;
+    color: #ffffff;
+    justify-content: start;
+  }
+  .highlight{
+    color: #ebb105;;
+  }
+  .formulario{
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+    border: 2px solid #ebb105;
+    padding: 20px 10px 10px;
+    border-radius: 2px;
+    font-family: 'JetBrains Mono', serif;
+    font-size: medium;
     
-}
-.Container-2{
-    flex: 1;
-}
-.Container-2 li{
-    margin-left: 20px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 3px;
-    list-style-type: none;
-}
-.Container-2 li{
-    background-color: rgb(255, 246, 233);
-    border: 2px dashed #000;
-}
-#ConteudoNovidades{
-    margin-bottom: 5%;
-    border:2px dashed #000;
-    margin-top: 1%;
+  }
+  .formulario h1{
+  font-size: 20px;
+  }
+  .formulario input{
+    width: 50%;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: #ebb105;
+    padding: 7px 7px;
+    font-family: 'JetBrains Mono';
+  }
+ ::placeholder{
+    color: rgb(0, 0, 0);
+  }
+  .formulario button{
+    width: 10%;
+    padding: 7px;
+    font-family: "JetBrains Mono" serif;
+
+  }
+  .titulo_projetos_futuros{
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  
+  .outros_Projetos {
+    font-family: "JetBrains Mono", serif;
+    margin-top: 5rem; /* Margem superior */
+    margin-bottom: 5rem; /* Margem inferior */
+    display: flex; /* Usando flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 2rem; /* Espaçamento entre os projetos */
 }
 
-.NossosJogos{
+/* Estilo dos projetos individuais */
+.projeto01, .projeto02, .projeto03 {
+    width: 30%; /* Largura dos projetos */
+    height: 33rem; /* Altura fixa */
+    background-color: rgb(54 54 54); /* Cor de fundo */
+    display: flex; /* Usando flexbox para centralizar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    border-radius: 2px; /* Bordas arredondadas */
+    
+}
+
+/* Estilo dos títulos */
+.outros_Projetos h2 {
+  font-family: "JetBrains Mono", serif;
+    margin: 0; /* Remove margens padrão */
+    text-align: center; /* Centraliza texto */
+    color: #ebb105;
+}
+
+footer {
+  margin-top: 7rem;
+  display: flex;           
+  justify-content: space-between;  
+  align-items: center;      
+  padding: 20px;           
+  background-color: #363636;
+  color: #ffffff;
+}
+
+/* Alinha o título FOTON à esquerda */
+footer .nomefoton h1 {
+  font-size: 24px;          
+  margin: 0;               
+}
+
+/* Centraliza a logo */
+footer .LogoCentral img {
+  height: 7rem;          
+  display: block;          
+  margin: 0 auto;  
+  border-radius: 3px;         
+}
+footer span{
+  background-color: #ffbf00;
+  color: #000000
+}
+
+/* Estilo para as redes sociais à direita */
+footer .redesocial i {
+  font-size: 24px;         
+  margin-left: 15px;       
+  color: #ffffff;             
+}
+
+footer .redesocial i:hover {
+  color: #0073e6;          
+}
+
+
+
+  /* Responsividade */
+
+@media (max-width: 1400px) {
+  body{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .conteudo-vale-esperanca{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+  }
+  .conteudo-vale-esperanca img{
+    border: solid rgb(66, 66, 66);
+  }
+  .Banner{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .Textos {
+    max-width: 85%;
+  }
+  .Textos p{
+    margin-top: 1.3rem;
+  }
+  .Textos button{
+    margin-top: 2rem;;
+    font-size: 1.5rem;
+  }
+  .Imagem img {
+    display: none;
 }
-#Lista-1{
-background-color: aquamarine;
+.imagem-projeto img {
+  max-width: 40rem;
 }
-#Lista-2{
-    background-color: brown;
+.titulos-textos {
+  max-width: 70%;
+  text-align: center;
 }
+
+}
+
+@media (max-width: 1200px) {
+
+  .projeto01, .projeto02, .projeto03 {
+    width: 20%;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .formulario{
+    max-width: 80%;
+    margin-left: auto;
+    margin-bottom: 7rem;
+    margin-right: auto;
+  }
+  .ItensFormulario{
+    display: flex;
+  }
+  .projeto01, .projeto02, .projeto03 {
+    width: 50%;
+    height: 30rem;
+  }
+  .outros_Projetos{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+
+  .imagem-projeto img {
+    max-width: 20rem;
+  }
+  .titulos-textos {
+    max-width: 90%;
+  }
+  .projeto01, .projeto02, .projeto03 {
+    width: 50%;
+    height: 30rem;
+  }
+ 
+  }
+
+  

@@ -1,96 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>
-    <link rel="stylesheet" href="css/style.css">
     <title>Foton Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="Nav-bar">
-            
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#Lista-1">JOGOS</a></li>
-                    <li><a href="#">EQUIPE</a></li>
-                    <li><a href="#">SOBRE NÓS</a></li>
-                </ul>
-            
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/FS.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Sobre">Sobre-nos</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+            </ul>
+            <div class="cta-button">
+                <button>Contato</button>
+            </div>
         </nav>
     </header>
-    <main>
-        <div id="Home-Banner">
-            <div>
-                <h1 class="Titulo-Home">Olá.</h1>
-                <h1 class="Titulo-Home"> Eu sou foton!</h1>
-                <p>Venha acompanhar nosso progresso, desde os rabiscos iniciais
-                </p>
-                <p> até a publicação final do nosso projeto!</p>
-                <button>Conferir</button>
-            </div>
-            <div class="Home-Lua">
-                <img id="img-Lua" src="img/Foton.png" alt="">
-            </div>  
+    <div class="Banner">
+        <div class="Textos">
+            <h1 class="Foton">FOTON <span>STUDIO</span></h1>
+            <p>Somos uma pequena empresa com grande coração dedicada a criar jogos minimalistas e criativos. Nossa
+                filosofia desde o principio foi "menos é mais", estamos atualmente trabalhando com nosso primeiro
+                projeto: O Vale da Esperança.
+            </p>
+            <p>Clique abaixo e confira o progresso! </p>
+            <a href="www.google.com">
+                <button class="Conteudo_jogo">Conferir</button>
+            </a>
         </div>
-        <hr>
-        <h1 id="TituloConteudo">Novidades</h1>
-        <div id="Novidades">
-            <div class="img-Container">
-                <img id="imgNovidades" src="img/ValeDaEsperanca.jpg" alt="">
-                <h2>Vale da Esperança</h2>
-                <p>Junte-se ao corajoso Charlie, nosso pequeno ratinho cinza,e embarque em uma emocionante aventura para salvar sua família!</p>
-                <p> </p>
-            </div>
-
-            <div class="Container-2">
-                    <ul>
-                        <li> Versão 4.0 correções e melhorias</li>
-                        <li> Versão 3.0 correções e melhorias</li>
-                        <li> Versão 2.0 correções e melhorias</li>
-                        <li> Versão 1.0 correções e melhorias</li>
-                        <li> Versão 0.0 correções e melhorias</li>
-                        <li> Versão 0.0 correções e melhorias</li>
-                    </ul>
-            </div>
-        </div>
-        <div>
-        <hr>
-        <div class="NossosJogos">
-            <div id="Lista-1">
-                <div>
-                    <img src="" alt="">
-                    <h3>Titudo Jogo</h3>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Titudo Jogo</h3>
-                </div>
-            </div>
-           
-            <div  id="Lista-2">
-                <div>
-                    <img src="" alt="">
-                    <h3>Titudo Jogo</h3>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Titudo Jogo</h3>
-                   </div>
-            </div>
-            
+        <div class="Imagem">
+            <img class="teste" src="img/FS.png" alt="Imagem_Banner">
         </div>
     </div>
-        <p>Este é um paragrafo</p>
-        <label for="">Esta é uma label feita para testar seus textos</label>
-    </main>
+    <hr>
+    <div class="conteudo-vale-esperanca">
+        <div class="imagem-projeto">
+            <img src="img/Modelo-Exemplo.jpeg" alt="Imagem do jogo Vale da Esperança">
+        </div>
+        <div class="titulos-textos">
+            <h1 class="Vale">VALE DA <SPAN class="highlight">ESPERANÇA</SPAN></h1>
+            <p>
+                Lorem ipsum dolor si atus medi lorem ipsum de remi cartere ni laguna dis mi atre nos.
+                Lorem ipsum dolor si atus medi lorem ipsum de remi cartere ni laguna dis mi atre nos.
+                Lorem ipsum dolor si atus medi lorem ipsum de remi cartere ni laguna dis mi atre nos.
+                Lorem ipsum dolor si atus medi lorem ipsum de remi cartere ni laguna dis mi atre nos.
+            </p>
+            <a href="#"><button class="btn-resumo">Ler História</button></a>
+        </div>
+    </div>
+    <hr>
+    <h1 class="titulo_projetos_futuros">Nossos próximos projetos</h1>
+    <div class="outros_Projetos">
+        <div class="projeto01">
+            <h2>Loading..</h2>
+        </div>
+        <div class="projeto02">
+            <h2>Loading..</h2>
+        </div>
+        <div class="projeto03">
+            <h2>Loading..</h2>
+        </div>
+    </div>
+    <div class="formulario">
+        <h1>Cadastre seu e-mail para receber novidades</h1>
+        <form class="ItensFormulario">
+            <input type="email" placeholder="Digite seu e-mail">
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <hr>
     <footer>
-            <hr>
+        <div class="nomefoton">
+            <h1>FOTON <span>STUDIO</span></h1>
+        </div>
+        <div class="LogoCentral"><img src="img/FS.png" alt="">
+        </div>
+        <div class="redesocial">
+            <i class="fab fa-instagram"></i> <!-- Ícone do Instagram -->
+            <i class="fab fa-youtube"></i> <!-- Ícone do Instagram -->
+            <i class="fab fa-envelope"></i> <!-- Ícone do Instagram -->
+        </div>
     </footer>
 </body>
 
